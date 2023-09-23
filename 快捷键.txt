@@ -1,0 +1,18 @@
+1、注释：
+
+　　a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/
+
+　　b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)
+
+　　c) 多行注释：[alt+shift+A]
+
+　　d) 多行注释：/**
+
+2、移动行：alt+up/down
+4、复制当前行：shift + alt +up/down
+5、删除当前行：shift + ctrl + k
+8、代码格式化：shift + alt +f
+19、自动换行 : alt + z
+24、折叠代码： ctrl + k + 0-9 (0是完全折叠)
+25、展开代码： ctrl + k + j (完全展开代码)
+26、跳转到下一行： ctrl + enter
