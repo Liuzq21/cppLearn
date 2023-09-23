@@ -1,0 +1,14 @@
+连接远程仓库
+git remote add origin git@github.com:Liuzq21/cppLearn.git
+建个Redmi分支----用于红米笔记本提交
+git branch -M Redmi
+本地库所有内容均保存至远程库
+git push -u origin Redmi
+
+
+
+查看分支：git branch
+创建分支：git branch
+切换分支：git checkout 或者git switch
+创建+切换分支：git checkout -b 或者git switch -c
+合并某分支到当前分支：git merge
