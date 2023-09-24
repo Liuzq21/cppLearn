@@ -137,4 +137,22 @@ public:
     // 调用成员函数类似，父类要加作用域
 
 // 六、多态【静态多态（即重载等，编译阶段确定地址）、动态多态（派生类、虚函数，运行时确定地址）】
+    // 1、有继承； 2、子类重写父类虚函数 3、父类指针或引用指向子类对象
+class Animal //抽象类——不可实例化对象，子类必须重写纯虚函数
+{
+public:
+    virtual void speak()=0;  // 纯虚函数
+    // virtual void speak(){cout<<""<<endl;}
+    virtual ~Animal(){}      // 用虚析构解决父类指针解决子类堆区释放不干净的问题
+    // 纯虚析构一定要有声明和实现，因为父类也可能有变量
+};// 在内存中会有一个 vfptr 指向虚函数表——记录了虚函数的地址
+
+class Cat : public Animal
+{
+    void speak(){cout<<"cat is speaking"<<endl;}
+};// 继承父类的虚函数表，并对重写的虚函数进行覆盖
+void doSpeak(Animal& a)
+{
+    a.speak();
+}// Cat c; doSpeak(c); // 输出cat is speaking
 

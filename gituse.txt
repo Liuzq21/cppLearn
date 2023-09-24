@@ -6,7 +6,10 @@ git branch -M Redmi
 git push -u origin Redmi
 
 
-
+git status
+git init
+git add [file]// 本质上仅提交到缓冲区里面
+git commit -m "text commit" // 正式提交仓库，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
 查看分支：git branch
 创建分支：git branch
 切换分支：git checkout 或者git switch
