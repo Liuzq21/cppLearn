@@ -15,3 +15,6 @@ git commit -m "text commit" // 正式提交仓库，-m后面输入的是本次�
 切换分支：git checkout 或者git switch
 创建+切换分支：git checkout -b 或者git switch -c
 合并某分支到当前分支：git merge
+
+创建了分支B517----用于实验室电脑提交
+git push -u origin Redmi
