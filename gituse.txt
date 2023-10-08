@@ -17,4 +17,10 @@ git commit -m "text commit" // 正式提交仓库，-m后面输入的是本次�
 合并某分支到当前分支：git merge
 
 创建了分支B517----用于实验室电脑提交
+git checkout Redmi
+git merge B517
 git push -u origin Redmi
+
+更新分支
+git fetch origin Redmi
+git merge origin/Redmi

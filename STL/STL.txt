@@ -1,0 +1,4 @@
+STL六大组件：容器、算法、迭代器、仿函数、适配器、空间配置器
+1、容器：vector list deque set map
+2、算法：sort find copy for_each
+3、迭代器：提供一种方法，使之能依序寻访容器中各个元素，而又为暴露该容器的内部表达方式。
